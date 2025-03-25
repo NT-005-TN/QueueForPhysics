@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Очередь</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Очередь участников</h1>
+
+    <!-- Пояснения -->
+    <div class="instructions">
+      <p><strong>+Д:</strong> Допуск (+1 балл)</p>
+      <p><strong>+П:</strong> Подпись измерений (+2 балла)</p>
+      <p><strong>+Р:</strong> Расчеты (+3 балла)</p>
+      <p><strong>+З:</strong> Защита (+4 балла)</p>
+      <p><strong>-Д:</strong> Допуск (-1 балл)</p>
+      <p><strong>-П:</strong> Подпись измерений (-2 балла)</p>
+      <p><strong>-Р:</strong> Расчеты (-3 балла)</p>
+      <p><strong>-З:</strong> Защита (-4 балла)</p>
+    </div>
+
+    <div class="form-container">
+      <input type="text" id="nameInput" placeholder="Введите ФИО" required>
+      <button id="addButton">Добавить в очередь</button>
+    </div>
+    <div class="queue-container">
+      <h2>Список участников</h2>
+      <ul id="queueList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
